@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <title>Beast 7 Nested Todo List</title>
+    <!--<link rel="stylesheet" href="css/app.css">-->
+  </head>
+
+  <body>
+
+		<section class="todoapp">
+      <header class="header">
+        <h1>Todo List with Nesting (Beast 7)</h1>
+        <input class="new-todo" placeholder="New todo" autofocus>
+      </header>
+      <section class="main">
+        <ul class="todo-list"></ul>
+      </section>
+    </section>
+    
+    <script id="todo-template-beast7" type="text/x-handlebars-template">
+      <li {{#if completed}}class="completed"{{/if}} data-id="{{id}}">
+        <div class="view"> 
+          <input class="toggle" type="checkbox" {{#if completed}}checked{{/if}}>
+          <input class="todo-title" value="{{title}}" data-id="title-{{id}}">
+          <button class="add-nested">Add Nested</button>
+          <button class="destroy">Destroy</button>
+        </div>
+        <ul data-id="ul-{{id}}"></ul>
+      </li>
+    </script>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/handlebars.js"></script>
+    <script src="js/beast7-app.js"></script>
+  </body>
+</html>
