@@ -45,18 +45,6 @@ jQuery(function ($) {
         .on('focusout', '.todo-title', this.edit.bind(this));
     }, 
 
-    // templateTodos: function(todos){
-    //   todos.forEach(function(todo){
-    //     if(todo.parent===null){
-    //       $('todo-list').append(this.todoTemplate(todo)); 
-    //     }
-    //     else{
-    //       var targetUl = $("[data-id='ul-"+todo.parent+"']")
-    //       targetUl.append(this.todoTemplate(todo));
-    //     }
-    //   }); 
-    // }, 
-
     templateTodos: function(todos){
       $('.todo-list').html("");
       for(i=0;i<todos.length;i++){
