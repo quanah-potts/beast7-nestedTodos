@@ -63,7 +63,7 @@ jQuery(function ($) {
       var todos = this.todos; 
       this.templateTodos.call(this,todos);  
       $('.main').toggle(todos.length > 0);
-			$('.new-todo').focus();
+      $('.new-todo').focus();
       util.store('todo-list', this.todos);
     }, 
 
