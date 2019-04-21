@@ -105,7 +105,7 @@ jQuery(function ($) {
         id: util.uuid(), 
         title: "",
         completed: false,
-        parent: parentId // dunno if this works?
+        parent: parentId 
       }; 
       this.todos.push(newNestedTodo);
       this.render(); 
