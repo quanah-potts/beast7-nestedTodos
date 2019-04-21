@@ -121,7 +121,6 @@ jQuery(function ($) {
       }; 
       this.todos.push(newNestedTodo);
       this.render(); 
-      //debugger; 
       $("[data-id='title-"+newNestedTodo.id+"']").focus(); 
     },
 
