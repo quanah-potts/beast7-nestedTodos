@@ -114,7 +114,7 @@ jQuery(function ($) {
 
     edit: function(e){
       var el = e.target;
-			var $el = $(el);
+      var $el = $(el);
       var val = $el.val().trim();
       this.todos[this.getIndexFromEl(el)].title = val; 
       this.render(); // this is really just to get focus on new-todo again
