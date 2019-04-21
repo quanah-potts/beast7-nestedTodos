@@ -122,14 +122,14 @@ jQuery(function ($) {
 
     toggle: function(e){
       var i = this.getIndexFromEl(e.target);
-			this.todos[i].completed = !this.todos[i].completed;
-			this.render();
+      this.todos[i].completed = !this.todos[i].completed;
+      this.render();
     },
 
-		destroy: function (e) {
-			this.todos.splice(this.getIndexFromEl(e.target), 1);
-			this.render();
-		}
+    destroy: function (e) {
+      this.todos.splice(this.getIndexFromEl(e.target), 1);
+      this.render();
+    }
 
   }; 
 
